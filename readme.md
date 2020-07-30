@@ -1,6 +1,8 @@
 # baseIO
 ## display base16 encoded data as binary
 
+![base.io.png](./base.io.png "An image illustrating how the font looks")
+
 A specialized font family to display hex values as binary values.
 
 There are currently two weights: **Normal** and **Bold**
@@ -16,23 +18,24 @@ Look in the index.html for a complete example.
 
 ## Character Mapping
 
-|| hex || bin ||
-| 0   | `    ` |
-| 1   | `   |` |
-| 2   | `  | ` |
-| 3   | `  ||` |
-| 4   | ` |  ` |
-| 5   | ` | |` |
-| 6   | ` || ` |
-| 7   | ` |||` |
-| 8   | `|   ` |
-| 9   | `|  |` |
-| a   | `| | ` |
-| b   | `| ||` |
-| c   | `||  ` |
-| d   | `|| |` |
-| e   | `||| ` |
-| f   | `||||` |
+| hex | bin
+| --- | ---
+| 0   | `    ` 
+| 1   | `   |` 
+| 2   | `  | ` 
+| 3   | `  ||` 
+| 4   | ` |  ` 
+| 5   | ` | |` 
+| 6   | ` || ` 
+| 7   | ` |||` 
+| 8   | `|   ` 
+| 9   | `|  |`
+| a   | `| | ` 
+| b   | `| ||` 
+| c   | `||  ` 
+| d   | `|| |` 
+| e   | `||| ` 
+| f   | `||||` 
 
 ## Future
 
