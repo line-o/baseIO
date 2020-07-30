@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="font.css">
+    <style>
+        * { box-sizing: content-box; }
+        body {
+            margin:0;
+            display:grid;
+            grid-template-rows: 12vh 40vh 40vh;
+            grid-template-areas: 
+                "hd"
+                "no"
+                "bl";
+            background-color: whitesmoke;
+        }
+        header {
+            grid-area: hd;
+            padding: .5em 1em;
+            color: greenyellow;
+            text-align: left;
+            background-color: darkslategray;
+            font-family: monospace;
+            font-size: x-large;
+            z-index:10;
+        }
+        [normal], [bold] { justify-self: center; align-self: center; z-index:1; border: solid thin darkslategray;}
+        [normal] { grid-area: no;}
+        [bold] { grid-area: bl; }
+        [bin] { grid-area: 1/1/4/1; justify-self: start; align-content: start; z-index:0; overflow:hidden;}
+        table { border-collapse: collapse; font-family: monospace; }
+        small { color: honeydew;}
+        th {
+            color: greenyellow;
+            padding: .5em;
+            background-color: darkslategray;
+            font-family: monospace;
+            font-weight: normal;
+            text-align: left;
+        }
+        [listing], [bin] { font-size: x-large; }
+        [listing] td:nth-of-type(2n+1) {
+            width: 2.4em;
+            line-height: 1.1em;
+            text-align: right;
+            padding: 0 .2em;
+            background-color: honeydew;
+            color: darkslategray;
+            font-family: monospace;
+        }
+        [listing] td:nth-of-type(2n) {
+            font-family: "baseIO-Normal", monospace;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        [listing][bold] td:nth-of-type(2n) {
+            font-family: "baseIO-Bold", monospace;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        [listing] tr { 
+            background-color: honeydew;
+        }
+        [listing] tr:hover {
+            color: greenyellow;
+            background-color: darkslategray;
+        }
+
+        [bin] td {
+            color: grey;
+            font-family: "baseIO-Normal", monospace;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        [bin] td:hover {
+            color: tomato;
+            font-family: "baseIO-Bold", monospace;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body>
+    <header>baseIO<br><small>display base16 encoded data as binary</small></header>
+    <table listing normal>
+        <thead><tr><th colspan=8>normal
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>4</td>
+            <td>8</td>
+            <td>8</td>
+            <td>12</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>5</td>
+            <td>5</td>
+            <td>9</td>
+            <td>9</td>
+            <td>13</td>
+            <td>d</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>6</td>
+            <td>6</td>
+            <td>10</td>
+            <td>a</td>
+            <td>14</td>
+            <td>e</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>7</td>
+            <td>7</td>
+            <td>11</td>
+            <td>b</td>
+            <td>15</td>
+            <td>f</td>
+        </tr>
+    </table>
+    <table listing bold>
+        <thead><tr><th colspan=8>bold
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>4</td>
+            <td>8</td>
+            <td>8</td>
+            <td>12</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>5</td>
+            <td>5</td>
+            <td>9</td>
+            <td>9</td>
+            <td>13</td>
+            <td>d</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>6</td>
+            <td>6</td>
+            <td>10</td>
+            <td>a</td>
+            <td>14</td>
+            <td>e</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>7</td>
+            <td>7</td>
+            <td>11</td>
+            <td>b</td>
+            <td>15</td>
+            <td>f</td>
+        </tr>
+    </table>
+    <table bin>
+        <tr>
+            <td>00000010
+            <td>10090000
+        <tr>
+            <td>00fb0001
+        <td>00000f12
+        <tr>
+            <td>00000012
+            <td>10340c03
+        <tr>
+            <td>00fb0001
+            <td>10340c03
+        <tr>
+            <td>00fb0001
+            <td>00000f12
+        <tr>
+            <td>00000012
+            <td>10340c03
+        <tr>
+            <td>00000200
+            <td>00fb0001
+        <tr>
+            <td>10340c03
+            <td>00000001
+        <tr>
+            <td>00015030
+            <td>104dc03b
+        <tr>
+            <td>00000001
+            <td>00000012
+        <tr>
+            <td>10340c03
+            <td>00000001
+        <tr>
+            <td>00100002
+            <td>00349c03
+        <tr>
+            <td>affe0000
+            <td>0000bb22
+        <tr>
+            <td>35e56c00
+            <td>00000084
+        <tr>
+            <td>e346ef7b
+            <td>44500008
+        <tr>
+            <td>ea3ef690
+            <td>0082b100
+        <tr>
+            <td>0000082b
+            <td>8efa3ef6
+        <tr>
+            <td>bb22535e
+            <td>6c084fe3
+        <tr>
+            <td>affe0100
+            <td>0010bb22
+        <tr>
+            <td>35e56c00
+            <td>0aa00084
+        <tr>
+            <td>44500008
+            <td>e346ef7b
+        <tr>
+            <td>8eea3ef6
+            <td>bb22535e
+        <tr>
+            <td>6c084fe3
+            <td>6ef7b744
+        <tr>
+            <td>82b18eea
+            <td>ef69bb22
+    </table>
+</body>
+</html>

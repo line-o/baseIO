@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: 'baseIO-Normal';
+  src:
+    url('fonts/baseIO-Normal.ttf?cxxa1q') format('truetype'),
+    url('fonts/baseIO-Normal.woff?cxxa1q') format('woff'),
+    url('fonts/baseIO-Normal.svg?cxxa1q#baseIO-Normal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'baseIO-Bold';
+  src:
+    url('fonts/baseIO-Bold.ttf?whn00v') format('truetype'),
+    url('fonts/baseIO-Bold.woff?whn00v') format('woff'),
+    url('fonts/baseIO-Bold.svg?whn00v#baseIO-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

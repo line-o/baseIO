@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'baseIO-Bold';
+  src:
+    url('fonts/baseIO-Bold.ttf?whn00v') format('truetype'),
+    url('fonts/baseIO-Bold.woff?whn00v') format('woff'),
+    url('fonts/baseIO-Bold.svg?whn00v#baseIO-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'baseIO-Bold' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-boldf:before {
+  content: "\66";
+}
+.icon-bolde:before {
+  content: "\65";
+}
+.icon-boldd:before {
+  content: "\64";
+}
+.icon-boldc:before {
+  content: "\63";
+}
+.icon-boldb:before {
+  content: "\62";
+}
+.icon-bolda:before {
+  content: "\61";
+}
+.icon-bold9:before {
+  content: "\39";
+}
+.icon-bold8:before {
+  content: "\38";
+}
+.icon-bold7:before {
+  content: "\37";
+}
+.icon-bold6:before {
+  content: "\36";
+}
+.icon-bold5:before {
+  content: "\35";
+}
+.icon-bold4:before {
+  content: "\34";
+}
+.icon-bold3:before {
+  content: "\33";
+}
+.icon-bold2:before {
+  content: "\32";
+}
+.icon-bold1:before {
+  content: "\31";
+}
+.icon-bold0:before {
+  content: "\30";
+}

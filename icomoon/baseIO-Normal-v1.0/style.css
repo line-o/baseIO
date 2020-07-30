@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'baseIO-Normal';
+  src:
+    url('fonts/baseIO-Normal.ttf?cxxa1q') format('truetype'),
+    url('fonts/baseIO-Normal.woff?cxxa1q') format('woff'),
+    url('fonts/baseIO-Normal.svg?cxxa1q#baseIO-Normal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'baseIO-Normal' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-f:before {
+  content: "\66";
+}
+.icon-e:before {
+  content: "\65";
+}
+.icon-d:before {
+  content: "\64";
+}
+.icon-c:before {
+  content: "\63";
+}
+.icon-b:before {
+  content: "\62";
+}
+.icon-a:before {
+  content: "\61";
+}
+.icon-9:before {
+  content: "\39";
+}
+.icon-8:before {
+  content: "\38";
+}
+.icon-7:before {
+  content: "\37";
+}
+.icon-6:before {
+  content: "\36";
+}
+.icon-5:before {
+  content: "\35";
+}
+.icon-4:before {
+  content: "\34";
+}
+.icon-3:before {
+  content: "\33";
+}
+.icon-2:before {
+  content: "\32";
+}
+.icon-1:before {
+  content: "\31";
+}
+.icon-0:before {
+  content: "\30";
+}
